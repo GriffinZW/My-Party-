@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> My Party! </title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+		function clearName() {
+		if (document.getElementById('nameField').value == 'First and Last Name'){
+				document.getElementById('nameField').value = '';
+			}
+		}
+	</script>
+<!-- function stops number reappearing-->
+	<script>
+		function clearPhone() {
+		if (document.getElementById('phoneField').value == 'Example: 123-456-7890'){
+				document.getElementById('phoneField').value = '';
+			}
+		}
+
+		function resetName() {
+		if (document.getElementById('nameField').value == ''){
+				document.getElementById('nameField').value = 'First and Last Name';
+			}
+		}
+
+		function resetPhone() {
+		if (document.getElementById('phoneField').value == ''){
+				document.getElementById('phoneField').value = 'Example: 123-456-7890';
+			}
+		}
+
+	</script>
+</head>
+<body>
+
+<h1>My Party!</h1>
+<h2>Date: 12/11/21</h2>
+
+
+<div class="container">
+  <main role="main">
+  		<form action="" method="post" name="signUpForm" id="signUpForm">
+  			<fieldset id="signUp">
+  				<legend>Want To Come? Give Your Name and Number!</legend>
+
+  					<label for="nameField">Name:</label>
+  					<input id="nameField" name="nameField" type="text" class="textfield" value="First and Last Name" onFocus="clearName();" onBlur="resetName();">
+
+  					<label for="phoneField">Phone:</label>
+  					<input id="phoneField" name="phoneField" type="text" class="textfield" value="Example: 123-456-7890" onFocus="clearPhone();" onBlur="resetPhone();">
+
+  					<input id="submit" type="submit" name="submit" value="Submit!">
+
+  			</fieldset>
+  		</form>
+  </main>
+</div>
+
+</body>
+</html>

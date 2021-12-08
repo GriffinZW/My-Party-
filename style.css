@@ -1,0 +1,25 @@
+body{
+  background-color: pink;
+  background: rgb(255,0,0);
+background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(231,159,32,1) 28%, rgba(0,104,255,1) 100%);
+}
+h1 {
+  font-family: Georgia, serif;
+  font-size: 50px;
+  padding-left: 10px;
+}
+h2 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  padding-left: 10px;
+}
+fieldset{
+  font-family: Georgia, serif;
+}
+input{
+  font-family: Georgia, serif;
+}
+label{
+  font-family: Georgia, serif;
+  padding-left: 10px;
+}
